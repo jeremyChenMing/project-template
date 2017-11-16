@@ -1,0 +1,48 @@
+@import '../../less/variables';
+
+.company_detail {
+  display: block;
+
+  :global {
+    .ant-modal-title {
+      font-size: @font-size-sm + 1;
+      color: @black;
+      text-align: center;
+    }
+
+    .ant-modal-footer {
+      text-align: center;
+
+      button {
+        height: 26px;
+        padding: 0;
+        text-align: center;
+        width: 100px;
+      }
+
+    }
+
+    .ant-select, .ant-calendar-picker {
+      width: 100%;
+    }
+
+  }
+
+  .row {
+    padding-bottom: 15px;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  .label {
+
+    text-align: right;
+    color: #4a4a4a;
+  }
+
+  .text {
+    font-weight: 200;
+  }
+
+}

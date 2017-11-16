@@ -1,0 +1,51 @@
+@import '../less/variables';
+
+.home {
+  height: 100%;
+  overflow: hidden;
+  .navs {
+    background: @white;
+    height: ~'calc(100% - 70px)';
+    margin-top: 10px;
+    width: 136px;
+    float: left;
+
+    a {
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      border-left: 4px solid transparent;
+      color: #4a4a4a;
+      padding-left: 25px;
+
+      &.active {
+        border-left-color: @base-color;
+        background: fadeout(@base-color, 95);
+        color: @base-color;
+      }
+
+      &:hover {
+        background: fadeout(@base-color, 95);
+        color: @base-color;
+      }
+
+      :global {
+
+        .upvi-icon {
+          margin-right: 10px;
+          width: 20px;
+          display: inline-block;
+        }
+      }
+
+    }
+
+  }
+
+  .content {
+    height: ~'calc(100% - 70px)';
+    margin: 10px 0 0 146px;
+    overflow-y: auto;
+  }
+
+}

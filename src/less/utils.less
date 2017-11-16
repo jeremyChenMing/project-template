@@ -1,0 +1,11 @@
+@import './variables';
+
+.background-image-2x(@name;@ext:png) {
+  background-image: url('../assets/images/@{name}.@{ext}');
+  background-image: image-set(url('../assets/images/@{name}@2x.@{ext}') 2x);
+}
+
+.background-image-3x(@name;@ext:png) {
+  background-image: url('../assets/images/@{name}.@{ext}');
+  background-image: image-set(url('../assets/images/@{name}@2x.@{ext}') 2x, url('../assets/images/@{name}@3x.@{ext}') 3x);
+}

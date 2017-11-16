@@ -1,0 +1,51 @@
+@import '../../less/utils';
+@import '../../less/variables';
+
+.header {
+  @height: 60px;
+  height: @height;
+  background: #252525;
+  overflow: hidden;
+
+  .logo {
+    float: left;
+    height: @height;
+
+    h1 {
+      height: 100%;
+      line-height: @height;
+      background: no-repeat 24px center;
+      .background-image-2x(qifei-logo);
+      font-size: @font-size-base;
+      color: rgba(255, 255, 255, 0.62);
+      font-weight: 300;
+      padding-left: 65px;
+    }
+  }
+
+  .right {
+    float: right;
+
+    :global {
+      .ant-avatar {
+        vertical-align: middle;
+        line-height: @height;
+        margin-right: 20px;
+        background: @base-color;
+      }
+    }
+
+    .actions {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: @height;
+      .item {
+        display: inline-block;
+        color: @white;
+        font-size: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
